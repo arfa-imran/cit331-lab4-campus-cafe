@@ -26,6 +26,7 @@ body {
   color: var(--text);
   background: var(--bg);
 }
+
 /* ---------- 2. Headings, links, focus ---------- */
 h1, h2, h3 {
   font-family: Georgia, "Times New Roman", serif;
@@ -50,6 +51,7 @@ textarea:focus-visible {
   outline: 3px solid var(--brand);
   outline-offset: 3px;
 }
+
 /* ---------- 3. Page shell ---------- */
 #main {
   max-width: 1000px;
@@ -67,11 +69,7 @@ h1 + p {
 }
  
 /* ---------- 4. Header and navigation ---------- */
-.site-header {
-  background: var(--brand-dark);
-  color: #fff;
-  padding: 12px 24px;
-}
+
 .brand {
   color: #fff;
   text-decoration: none;
@@ -109,6 +107,7 @@ h1 + p {
 }
 .site-footer p { margin: 4px 0; }
 .site-footer a { color: #fff; }
+
 /* ---------- 6. Hero, buttons, cards ---------- */
 .hero {
   background: var(--brand);
@@ -209,6 +208,7 @@ a[href^="http"]::after {
   content: " \2197";
   font-size: 0.85em;
 }
+
 /* ---------- 9. Forms ---------- */
 form > fieldset {
   background: var(--surface);
@@ -257,11 +257,7 @@ input[placeholder]:not(:placeholder-shown):invalid {
 /* ---------- 10. Positioning ---------- */
  
 /* sticky: stays at the top while the page scrolls */
-.site-header {
-  position: sticky;
-  top: 0;
-  z-index: 100;
-}
+
  
 /* absolute: placed inside its nearest positioned parent */
 .menu-item { position: relative; }
@@ -311,6 +307,7 @@ input[placeholder]:not(:placeholder-shown):invalid {
   padding: 8px 14px;
   border-radius: 8px;
 }
+
 /* ---------- 11. Flexbox: header, nav, footer ---------- */
 .site-header {
   display: flex;
@@ -318,7 +315,15 @@ input[placeholder]:not(:placeholder-shown):invalid {
   align-items: center;
   justify-content: space-between;
   gap: 12px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--brand-dark);
+  color: #fff;
+  padding: 12px 24px;
 }
+
+
 .brand {
   display: flex;
   align-items: center;
@@ -337,6 +342,7 @@ input[placeholder]:not(:placeholder-shown):invalid {
   justify-content: space-between;
   gap: 8px 24px;
 }
+
 /* ---------- 12. Flexbox: cards and menu ---------- */
 .card-row {
   display: flex;
@@ -373,6 +379,7 @@ body {
   width: 100%;
   flex: 1;
 }
+
 /* ---------- 13. Flexbox: form layout ---------- */
 .form-row {
   display: flex;
@@ -403,6 +410,7 @@ fieldset.choice {
  
 .saved-orders { margin-top: 40px; }
 .table-wrap { overflow-x: auto; margin-bottom: 16px; }
+
 /* ---------- 14. Responsive ---------- */
 img {
   max-width: 100%;
@@ -421,3 +429,4 @@ img {
   .btn { display: block; width: 100%; text-align: center; }
   .site-footer { flex-direction: column; align-items: flex-start; }
 }
+
